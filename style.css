@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor0: #f0f1e8;
+    --cor1: #8E552E;
+    --cor2: #762e00;
+    --cor3: #762d0077;
+    --cor4: #762d0010;
+    --cor5: #8e542e04;
+    --cor6: #004700;
+}
+
+
+
+/* CONFIGURAÇÕES PADRÕES E GERAIS */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', 'JetBrains Mono', 'Trebuchet MS', Helvetica, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o container ocupar toda a altura da página */
+}
+
+/* CONFIGURAÇÕES HEADER */
+header {
+    height: auto; /* Altura automática com base no conteúdo */
+    padding: 50px 0;
+    background-color: var(--cor3); /* Ajuste de fundo, se necessário */
+}
+
+/* CONFIGURAÇÕES MAIN */
+main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante, empurrando o footer para o final */
+    padding: 20px;
+}
+
+.mainClass {
+    color: var(--cor1);
+    background-color: var(--cor0);
+    text-align: justify;
+    padding: 50px 20px;
+}
+
+
+
+/* CONFIGURAÇÕES FOOTER */
+footer {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONFIGURAÇÕES DAS CAIXAS */
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    height: 300px; /* Altura fixa para parallax */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+/* CLASSES PARA CONFIGURAR IMAGENS DE PARALLAX */
+.caixa1 {
+    background-image: url(imagens/img1.jpg);
+}
+
+.caixa2 {
+    background-image: url(imagens/img4.jpg);
+}
+
+.caixa3 {
+    background-image: url(imagens/img3.jpg);
+}
+
+.caixa4 {
+    background-image: url(imagens/img2.jpg);
+}
