@@ -36,6 +36,48 @@ header {
     background-color: var(--cor3); /* Ajuste de fundo, se necessário */
 }
 
+.logo-area {
+    display: flex;              /* Alinha o conteúdo internamente */
+    justify-content: center;    /* Centraliza o logo horizontalmente */
+    align-items: center;        /* Centraliza o logo verticalmente */
+    max-width: 100%;            /* Garante que o contêiner seja responsivo */
+    margin: 0 auto;    
+    opacity: 0.95;
+}
+
+#logo-area img {
+    max-width: 100%;            /* Faz o logo redimensionar proporcionalmente */
+    height: auto;               /* Mantém as proporções do logo */
+    display: block;             /* Remove margens desnecessárias */
+}
+
+#logo-area picture {
+    display: block;             /* Garante que o elemento seja tratado como bloco */
+    max-width: 100%;            /* Garante que o `<picture>` não ultrapasse os limites */
+}
+
+.menu-area {
+    top: -0.8em;
+    padding: 0em;
+    position: relative;
+    text-align: center;
+}
+
+nav > a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.35em;
+}
+
+nav > a:hover {
+    box-shadow: 4px 4px 2px #8e542e1c;
+    background-color: #762d001a;
+    border: 3px solid var(--cor4); 
+    border-radius: 10px;
+}
+
+
 /* CONFIGURAÇÕES MAIN */
 main {
     flex: 1; /* Faz o conteúdo ocupar o espaço restante, empurrando o footer para o final */
