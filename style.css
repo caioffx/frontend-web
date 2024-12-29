@@ -107,14 +107,27 @@ main {
     border-radius: 10px;
 }
 
+.mainClass > h1 {
+    color: #5e361c;
+}
+
 
 
 /* CONFIGURAÇÕES FOOTER */
 footer {
-    background-color: var(--cor2);
+    background-color:var(--cor1);
     color: var(--cor0);
     text-align: center;
     padding: 20px;
+}
+
+footer > a {
+    text-decoration: none;
+    color:var(--cor0);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* CONFIGURAÇÕES DAS CAIXAS */
