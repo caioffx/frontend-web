@@ -27,6 +27,7 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Faz o container ocupar toda a altura da página */
+    background-color: var(--cor0);
 }
 
 /* CONFIGURAÇÕES HEADER */
@@ -43,6 +44,7 @@ header {
     max-width: 100%;            /* Garante que o contêiner seja responsivo */
     margin: 0 auto;    
     opacity: 0.95;
+    padding-top: 4em; 
 }
 
 #logo-area img {
@@ -51,20 +53,21 @@ header {
     display: block;             /* Remove margens desnecessárias */
 }
 
-#logo-area picture {
+#logo-area picture {   
     display: block;             /* Garante que o elemento seja tratado como bloco */
     max-width: 100%;            /* Garante que o `<picture>` não ultrapasse os limites */
-}
 
+}
 .menu-area {
     top: -0.8em;
     padding: 0em;
     position: relative;
     text-align: center;
+
 }
 
 nav > a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.35em;
@@ -87,8 +90,21 @@ main {
 .mainClass {
     color: var(--cor1);
     background-color: var(--cor0);
-    text-align: justify;
+    text-align: center;
     padding: 50px 20px;
+}
+
+.mainClass a {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+.mainClass > a:hover {
+    text-decoration: none;
+    box-shadow: 4px 4px 2px #8e542e1c;
+    background-color: #762d001a;
+    border: 3px solid var(--cor4); 
+    border-radius: 10px;
 }
 
 
