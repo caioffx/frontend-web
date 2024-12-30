@@ -44,7 +44,7 @@ header {
     max-width: 100%;            /* Garante que o contêiner seja responsivo */
     margin: 0 auto;    
     opacity: 0.95;
-    padding-top: 4em; 
+    padding-top: 2.1em; 
 }
 
 #logo-area img {
@@ -56,14 +56,19 @@ header {
 #logo-area picture {   
     display: block;             /* Garante que o elemento seja tratado como bloco */
     max-width: 100%;            /* Garante que o `<picture>` não ultrapasse os limites */
+}
 
+.logo-area h1 {
+    font-size: 4em;
+    color: var(--cor0);
+    text-align: center;
+    text-shadow: 2px 2px var(--cor3);
 }
 .menu-area {
-    top: -0.8em;
+    top: -2.8em;
     padding: 0em;
     position: relative;
     text-align: center;
-
 }
 
 nav > a {
@@ -71,6 +76,7 @@ nav > a {
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.35em;
+    text-shadow: 2px 2px var(--cor3);
 }
 
 nav > a:hover {
@@ -115,7 +121,7 @@ main {
 
 /* CONFIGURAÇÕES FOOTER */
 footer {
-    background-color:var(--cor1);
+    background-color: rgb(207, 167, 139);
     color: var(--cor0);
     text-align: center;
     padding: 20px;
@@ -147,6 +153,7 @@ footer a:hover {
 
 .caixa2 {
     background-image: url(imagens/img4.jpg);
+    text-align: center;
 }
 
 .caixa3 {
