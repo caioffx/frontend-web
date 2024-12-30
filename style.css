@@ -117,6 +117,24 @@ main {
     color: #5e361c;
 }
 
+#mainFlexContainer {
+    color: var(--cor1);
+    background-color: var(--cor0);
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainFlexItems {
+    width: 200px;
+    height: 293px;
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 7px;
+}
 
 
 /* CONFIGURAÇÕES FOOTER */
