@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor0: #f0f1e8;
+    --cor1: #8E552E;
+    --cor2: #762e00;
+    --cor3: #762d0077;
+    --cor4: #762d0010;
+    --cor5: #8e542e04;
+    --cor6: #004700;
+}
+
+
+
+/* CONFIGURAÇÕES PADRÕES E GERAIS */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', 'JetBrains Mono', 'Trebuchet MS', Helvetica, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh; /* Faz o container ocupar toda a altura da página */
+    background-color: var(--cor0);
+}
+
+/* CONFIGURAÇÕES HEADER */
+header {
+    height: auto; /* Altura automática com base no conteúdo */
+    padding: 50px 0;
+    background-color: var(--cor3); /* Ajuste de fundo, se necessário */
+}
+
+.logo-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;              /* Alinha o conteúdo internamente */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    /* Centraliza o logo horizontalmente */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;        /* Centraliza o logo verticalmente */
+    max-width: 100%;            /* Garante que o contêiner seja responsivo */
+    margin: 0 auto;    
+    opacity: 0.95;
+    padding-top: 2.1em; 
+}
+
+#logo-area img {
+    max-width: 100%;            /* Faz o logo redimensionar proporcionalmente */
+    height: auto;               /* Mantém as proporções do logo */
+    display: block;             /* Remove margens desnecessárias */
+}
+
+#logo-area picture {   
+    display: block;             /* Garante que o elemento seja tratado como bloco */
+    max-width: 100%;            /* Garante que o `<picture>` não ultrapasse os limites */
+}
+
+.logo-area h1 {
+    font-size: 4em;
+    color: var(--cor0);
+    text-align: center;
+    text-shadow: 2px 2px var(--cor3);
+}
+.menu-area {
+    top: -2.8em;
+    padding: 0em;
+    position: relative;
+    text-align: center;
+}
+
+nav > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.35em;
+    text-shadow: 2px 2px var(--cor3);
+}
+
+nav > a:hover {
+    -webkit-box-shadow: 4px 4px 2px #8e542e1c;
+            box-shadow: 4px 4px 2px #8e542e1c;
+    background-color: #762d001a;
+    border: 3px solid var(--cor4); 
+    border-radius: 10px;
+}
+
+
+/* CONFIGURAÇÕES MAIN */
+main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; /* Faz o conteúdo ocupar o espaço restante, empurrando o footer para o final */
+    padding: 20px;
+}
+
+.mainClass {
+    color: var(--cor1);
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.mainClass a {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+.mainClass > a:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 4px 4px 2px #8e542e1c;
+            box-shadow: 4px 4px 2px #8e542e1c;
+    background-color: #762d001a;
+    border: 3px solid var(--cor4); 
+    border-radius: 10px;
+}
+
+.mainClass > h1 {
+    color: #5e361c;
+}
+
+#mainFlexContainer {
+    color: var(--cor1);
+    background-color: var(--cor0);
+    border: 1px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.mainFlexItems {
+    width: 200px;
+    height: 293px;
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 7px;
+}
+
+
+/* CONFIGURAÇÕES FOOTER */
+footer {
+    background-color: rgb(207, 167, 139);
+    color: var(--cor0);
+    text-align: center;
+    padding: 20px;
+}
+
+footer > a {
+    text-decoration: none;
+    color:var(--cor0);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* CONFIGURAÇÕES DAS CAIXAS */
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    height: 300px; /* Altura fixa para parallax */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+/* CLASSES PARA CONFIGURAR IMAGENS DE PARALLAX */
+.caixa1 {
+    background-image: url(imagens/img1.jpg);
+}
+
+.caixa2 {
+    background-image: url(imagens/img4.jpg);
+    text-align: center;
+}
+
+.caixa3 {
+    background-image: url(imagens/img3.jpg);
+}
+
+.caixa4 {
+    background-image: url(imagens/img2.jpg);
+}
