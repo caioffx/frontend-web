@@ -188,18 +188,18 @@ footer a:hover {
 
 /* CLASSES PARA CONFIGURAR IMAGENS DE PARALLAX */
 .caixa1 {
-    background-image: url(imagens/img1.jpg);
+    background-image: url(../imagens/img1.jpg);
 }
 
 .caixa2 {
-    background-image: url(imagens/img4.jpg);
+    background-image: url(../imagens/img4.jpg);
     text-align: center;
 }
 
 .caixa3 {
-    background-image: url(imagens/img3.jpg);
+    background-image: url(../imagens/img3.jpg);
 }
 
 .caixa4 {
-    background-image: url(imagens/img2.jpg);
+    background-image: url(../imagens/img2.jpg);
 }
