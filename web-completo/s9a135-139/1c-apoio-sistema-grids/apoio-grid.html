@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
 
-    <title>Bootstrap - Sistema de grids</title>
+    <title>Brava Cerâmica</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,8 +13,8 @@
 
     <style type="text/css">
       .marcador {
-        background-color: #fe9d9d;
-        border: 1px solid #f94646;
+        background-color: #615a5a;
+        border: 1px solid #000000;
       }
 
       .marcador-container {
@@ -26,32 +26,35 @@
   </head>
 
   <body>
+    <header class="marcador-container">
+      <div class="container-fluid">
 
-    <div class="container-fluid marcador-container">
-
-      <div class="row marcador">
-
+        <div class="marcador-container col-12 d-flex pt-3 pb-3 justify-content-center">
+          <div class="row">
+            <div class="marcador col-12 text-center pt-3 pb-3">
+              BRAVA CERÂMICA<br>PARALLAX <br>
+              Início
+              Peças
+              Login
+              Cadastro
+              Contato
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+            <div class="marcador-container col-12 d-flex justify-content-end pt-3 pb-3">
+              <div class="marcador col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3 pb-3 text-right">
+                Área Carrinho
+              </div>
+              <div class="marcador col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3 pb-3 text-right">
+                Área Perfil
+              </div>
+            </div>
+        </div>
       </div>
-
-      <div class="row">
-        <div class="marcador col-12 text-center pt-3 pb-3">
-          BRAVA CERÂMICA<br>PARALLAX
-        </div>
-        <div class="marcador col-12  col-sm-12 col-md-10 col-lg-10 col-xl-8 text-center pt-3 pb-3">
-          Início
-          Peças
-          Login
-          Cadastro
-          Contato
-        </div>
-        <div class="marcador col-12 col-sm-12 col-md-1 col-lg-1 col-xl-2 pt-3 pb-3 text-right">
-          Área Carrinho
-        </div>
-        <div class="marcador col-12 col-sm-12 col-md-1 col-lg-1 col-xl-2 pt-3 pb-3 text-right">
-          Área Perfil
-        </div>
-      </div>
-
+    </header>
+    <main class="marcador-container">
       <div class="row marcador">
         <div class="marcador col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 pb-3 text-center">
           CAIXA 2 <br>PARALLAX
@@ -65,20 +68,20 @@
         <div class="marcador col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 pb-3 text-center">
           CAIXA 3 <br>PARALLAX
         </div>
-        
       </div>
+    </main>
 
-      <div class="row marcador">
-        <div class="marcador col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 pb-3 text-center">
-          criado por <a href="https://github.com/caioffx" target="_blank" rel="external">@caioffx</a>
-          <p>
-              <br>
-              &copy Copyright Brava Cerâmica - 2024. Todos os direitos reservados.
-          </p>
+      <footer class="marcador-container">
+        <div class="row marcador">
+          <div class="marcador col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 pb-3 text-center">
+            criado por <a href="https://github.com/caioffx" target="_blank" rel="external">@caioffx</a>
+            <p>
+                <br>
+                &copy Copyright Brava Cerâmica - 2024. Todos os direitos reservados.
+            </p>
+          </div>
         </div>
-      </div>
-
-    </div>
+      </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
