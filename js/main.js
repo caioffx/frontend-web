@@ -1,1 +1,2 @@
-alert('Olá mundo!')
+alert('Olá mundo!');
+document.getElementById('nome').value = 'Oi';
