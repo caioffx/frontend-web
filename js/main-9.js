@@ -23,6 +23,3 @@ var difMilissegs = data2.getTime() - data1.getTime();
 var difDias = difMilissegs/(1*24*60*60*1000);
 
 document.write(Math.ceil(difDias));
-
-
-
