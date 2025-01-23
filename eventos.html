@@ -27,7 +27,7 @@
         <div style="background: grey; height: 150px; width: 150px;"></div>  
     </div>-->
 
-    <div style="display: flex; margin-top: 1500px;">
+    <!--<div style="display: flex;">
         <div style="background: greenyellow; height: 150px; width: 150px;">
             <input onkeydown="acao5()" type="text"/>
         </div>
@@ -38,8 +38,29 @@
             <input onkeyup="acao5()" type="text">
         </div>
         <div style="background: grey; height: 150px; width: 150px;"></div>  
-    </div>
+    </div>-->
 
+    <!-- SELECIONANDO ELEMENTOS - DOM:
+
+    getElementById() -> element e não elements. mais usado em 80% dos casos.
+    getElementsByTagName()
+    getElementsByClassName()
+    getElementsByName()
+    
+        <input 
+            placeholder="Digite seu nome" 
+            type="text" 
+            id="nome_usuario" 
+            class="campo_texto" 
+            name="nome"
+        >
+    -->
+
+    <span><input placeholder="Digite um caractere aqui" type="text" onkeyup="distribuiCaractere()" id="entrada"></span>
+    <hr>
+    
+    <input placeholder="Letras" type="text" disabled="disabled" id="letras">
+    <input placeholder="Numeros" type="text" disabled="disabled" id="numeros">
 
     <script src="/js/main-10.js"></script>
 </body>
