@@ -53,3 +53,40 @@ lista_coisas['frutas'].pop();
 
 
 console.log(lista_coisas);
+
+var lista_produtos = [];
+
+lista_produtos['0'] = [];
+
+lista_produtos[0][0] = 'produto 1';
+lista_produtos[0][1] = 'produto 2';
+lista_produtos[0][2] = 'produto 3';
+lista_produtos[0][3] = 'produto 4';
+lista_produtos[0][4] = 'produto 5';
+
+console.log(lista_produtos);
+
+//retorna a posição (índice) do elemento solicitado dentro da string
+console.log(lista_produtos[0].indexOf('produto 5'));
+
+lista_produtos['promos'] = [];
+
+lista_produtos['promos'][0] = 'produto 1';
+lista_produtos['promos'][1] = 'produto 2';
+lista_produtos['promos'][2] = 'produto 3';
+lista_produtos['promos'][3] = 'produto 4';
+lista_produtos['promos'][4] = 'produto 5';
+
+console.log(lista_produtos['promos'].indexOf('produto 1'));
+
+var valorDigitado = prompt('Digite o produto');
+
+
+var aux = lista_produtos['promos'].indexOf(valorDigitado); 
+
+if(aux === -1) {
+    console.log('Desculpe, mas não existe esse produto :(');
+}else{
+    console.log('O produto existe e está na posição ' + lista_produtos['promos'].indexOf(lista_produtos['promos'][aux]));
+}
+
