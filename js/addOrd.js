@@ -23,8 +23,6 @@ function recValue(Array) {
             document.getElementById('textField').value = '';
         }
     }
-
-
 }
 
 function orderValue(Array){
