@@ -49,7 +49,6 @@ while(j <= 10){
         let tab = j*k;
         document.write(j+'x'+k+'='+tab+'<br>');
         k++;
-
     }
     j++;
     document.write('<br>');
