@@ -11,20 +11,47 @@ lista_coisas[5] = 'zippo'
 lista_coisas[6] = 'Caneca'
 lista_coisas[7] = 'Cubo'
 
-for (let i = 0; i < lista_coisas.length; i++) {
+/*for (let i = 0; i < lista_coisas.length; i++) {
     const element = lista_coisas[i];
     console.log(element);
     document.write(lista_coisas[i]+' '+'<br>');
+}*/
+
+let i = 0;
+
+while (i < lista_coisas.length){
+    const element = lista_coisas[i];
+    console.log(element);
+    document.write(lista_coisas[i] + '<br>');
+    i++;
 }
+
+
 
 document.write('<br>');
 document.write('<hr>');
 
-for (let i = 1; i<=10; i++) {
+/*for (let i = 1; i<=10; i++) {
     for(let j = 1; j<=10; j++){
         let tab = i*j;
         document.write(i+'*'+j+'='+tab+'<br>');
     }
+    document.write('<br>');
+    document.write('<hr>');
+}*/
+
+let j = 1;
+
+
+while(j <= 10){
+    let k = 1;
+    while(k <= 10){
+        let tab = j*k;
+        document.write(j+'x'+k+'='+tab+'<br>');
+        k++;
+
+    }
+    j++;
     document.write('<br>');
     document.write('<hr>');
 }
